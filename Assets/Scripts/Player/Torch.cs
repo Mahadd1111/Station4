@@ -15,15 +15,6 @@ public class Torch : MonoBehaviour
         SetTorch(startOn);
     }
 
-    // Called automatically by PlayerInput (Behavior: Send Messages)
-    public void OnTorch(InputValue value)
-    {
-        if (value.isPressed)
-        {
-            SetTorch(!isOn);
-        }
-    }
-
     public void SetTorch(bool on)
     {
         isOn = on;
